@@ -9,6 +9,7 @@ import reset from '../styles/reset'
 import Logo from './logo'
 
 const GlobalStyles = createGlobalStyle`
+
   *::before,
   *::after {
     box-sizing: border-box;
@@ -73,7 +74,7 @@ const GlobalStyles = createGlobalStyle`
     margin: 0;
     padding: 0;
     color: black;
-    font-family: 'Work Sans', '-apple-system', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    font-family: 'Lobster', cursive;
     background: white;
     font-size: 18px;
   }
@@ -94,8 +95,8 @@ const isPartiallyActive = ({ isPartiallyCurrent }: { isPartiallyCurrent: boolean
   isPartiallyCurrent ? { className: 'navlink-active navlink' } : { className: 'navlink' }
 
 const PartialNavLink = ({ children, to, ...rest }: { children: React.ReactNode; to: string }) => (
-  <Link getProps={isPartiallyActive} to={to} {...rest}>
-    {children}
+  <Link getProps={isPartiallyActive} to={to} {...rest}      >
+      {children}
   </Link>
 )
 
@@ -132,7 +133,7 @@ const SideBarInner = styled(Box)<{ bg: string }>`
   }
 
   svg {
-    fill: ${props => readableColor(`${props.bg}`)};
+    color: ${props => readableColor(`${props.bg}`)};
   }
 `
 
@@ -231,6 +232,7 @@ const Layout = ({ children, color }: LayoutProps) => {
               <Box width={['3rem', '4rem', '5rem', '6rem']}>
                 <Link to="/" aria-label="LekoArts, Back to Home">
                   <Logo />
+              
                 </Link>
               </Box>
               <Nav
@@ -252,8 +254,7 @@ const Layout = ({ children, color }: LayoutProps) => {
           <Main>{children}</Main>
           <Footer color={color}>
             <Box p={[6, 6, 8]} fontSize={0}>
-              Starter by <a href="https://www.lekoarts.de/en">LekoArts</a>.<br />
-              <a href="https://github.com/LekoArts/gatsby-starter-portfolio-jodie">Source</a>.
+              Моята Приказна Книга / {new Date().getUTCFullYear()}
             </Box>
           </Footer>
         </Wrapper>
