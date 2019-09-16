@@ -7,7 +7,7 @@ describe('navigation', () => {
     cy.visit('/')
   })
 
-  it('link to /projects works', () => {
+  it('link to projects works', () => {
     cy.get('nav').within(() => {
       cy.getByText(/projects/i)
         .click({ force: true })
