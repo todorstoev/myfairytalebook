@@ -42,7 +42,7 @@ const Title = styled.div`
   color: white;
   font-weight: 700;
   font-size: ${props => props.theme.fontSizes[3]};
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  text-shadow: 0 1px 3px #607d8b;
   @media (max-width: ${props => props.theme.breakpoints[3]}) {
     font-size: ${props => props.theme.fontSizes[1]};
   }
@@ -136,7 +136,7 @@ const Instagram: React.FunctionComponent<Props> = ({
 
   return (
     <Layout color="#3F4F67">
-      <SEO title="Instagram | Jodie" />
+      <SEO title="Инстаграм | Моята Приказна Книга" />
       <Grid style={pageAnimation}>
         {trail.map((style, index) => {
           // Grab everything before the first hashtag (because I write my captions like that)

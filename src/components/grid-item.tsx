@@ -23,7 +23,7 @@ const GridItem = styled(Link)`
     font-weight: 700;
     font-size: ${props => props.theme.fontSizes[4]};
     padding: ${props => props.theme.space[6]};
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    text-shadow: 0 1px 3px #607d8b;
 
     @media (max-width: ${props => props.theme.breakpoints[3]}) {
       font-size: ${props => props.theme.fontSizes[3]};

@@ -38,8 +38,8 @@ const Books: React.FunctionComponent<PageProps> = ({ data: { books } }) => {
 	});
 
 	return (
-		<Layout color="#000">
-			<SEO title="Projects | Jodie" />
+		<Layout color="#353334">
+			<SEO title="Книги | Моята Приказна Книга" />
 			<Area style={pageAnimation}>
 				{books.nodes.map((book) => (
 					<GridItem key={book.slug} to={book.slug} aria-label={`View project "${book.title}"`}>

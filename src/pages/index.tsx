@@ -98,7 +98,10 @@ const Index: React.FunctionComponent<PageProps> = ({ data: { firstProject, three
 
 	return (
 		<Layout>
-			<SEO />
+			<SEO
+				title="Моята Приказна Книга | Моята Приказна Книга"
+				desc="В една нощ приказна, небето бе отрупано с ярко светещи звезди. Все едно една от тях падна и в съня ми спокоен се настани."
+			/>
 			<Area style={pageAnimation}>
 				<FirstProject to={firstProject.slug} aria-label={`View project "${firstProject.title}"`}>
 					<Img fluid={firstProject.cover.childImageSharp.fluid} />
@@ -118,7 +121,7 @@ const Index: React.FunctionComponent<PageProps> = ({ data: { firstProject, three
 				</ThreeProjects>
 				<Instagram to="/instagram" aria-label="See my Instagram pictures">
 					<Img fluid={instagram.childImageSharp.fluid} />
-					<span>Instagram</span>
+					<span>Инстаграм</span>
 				</Instagram>
 			</Area>
 		</Layout>
@@ -146,16 +149,16 @@ export const query = graphql`
 				slug
 				cover {
 					childImageSharp {
-						fluid(quality: 95, maxWidth: 1200) {
+						fluid(quality: 100, maxWidth: 1200) {
 							...GatsbyImageSharpFluid_withWebp
 						}
 					}
 				}
 			}
 		}
-		aboutUs: file(sourceInstanceName: { eq: "images" }, name: { eq: "about-us" }) {
+		aboutUs: file(sourceInstanceName: { eq: "images" }, name: { eq: "about-index" }) {
 			childImageSharp {
-				fluid(quality: 95, maxWidth: 1200) {
+				fluid(quality: 100, maxWidth: 1200) {
 					...GatsbyImageSharpFluid_withWebp
 				}
 			}
