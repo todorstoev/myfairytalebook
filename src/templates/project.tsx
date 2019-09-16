@@ -105,7 +105,7 @@ const Book: React.FunctionComponent<PageProps> = ({ data: { book, images } }) =>
 		<Layout color={book.color}>
 			<SEO
 				pathname={book.slug}
-				title={`${book.title_detail} | Jodie`}
+				title={`${book.title_detail} | Моята приказна книга`}
 				desc={book.desc}
 				node={book.parent}
 				banner={book.cover.childImageSharp.resize.src}
