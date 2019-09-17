@@ -12,8 +12,8 @@ module.exports = {
 	author: 'tstoev', // Author for schema.org JSONLD
 
 	// siteFBAppID: '123456789', // Facebook App ID - Optional
-	userTwitter: '', // Twitter Username
-	ogSiteName: '', // Facebook Site Name
+	userTwitter: '@myfairytaleboook', // Twitter Username
+	ogSiteName: 'myfairytalebookss', // Facebook Site Name
 	ogLanguage: 'en_US', // og:language
 	googleAnalyticsID: 'UA-148150611-1',
 
