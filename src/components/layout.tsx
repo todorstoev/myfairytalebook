@@ -95,7 +95,7 @@ const isPartiallyActive = ({ isPartiallyCurrent }: { isPartiallyCurrent: boolean
   isPartiallyCurrent ? { className: 'navlink-active navlink' } : { className: 'navlink' }
 
 const PartialNavLink = ({ children, to, ...rest }: { children: React.ReactNode; to: string }) => (
-  <Link getProps={isPartiallyActive} to={to} {...rest}      >
+  <Link getProps={isPartiallyActive} to={to} {...rest}>
       {children}
   </Link>
 )
@@ -254,6 +254,22 @@ const Layout = ({ children, color }: LayoutProps) => {
           <Main>{children}</Main>
           <Footer color={color}>
             <Box p={[6, 6, 8]} fontSize={0}>
+            <Link to="https://www.facebook.com/myfairytalebookss/" aria-label="Facebook">
+              Facebook
+                </Link>
+                <br/>
+                <Link to="https://www.facebook.com/myfairytalebookss/" aria-label="Facebook">
+              Instagram
+                </Link>
+            <br/>    
+            <br/>  
+            <a href={`tel:+359883449030`}>+359883449030</a>
+            <br/>
+            <a href={`mailto:hristy.keyt@gmail.com`}>hristy.keyt@gmail.com</a>        
+           
+            </Box>
+            <Box p={[6, 6, 8]} fontSize={0}>
+ 
               Моята Приказна Книга / {new Date().getUTCFullYear()}
             </Box>
           </Footer>
