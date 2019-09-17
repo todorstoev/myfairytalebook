@@ -7,7 +7,7 @@ module.exports = {
 	siteHeadline: 'Нощ приказна', // Headline for schema.org JSONLD
 	siteUrl: 'https://myfairytalebook.com', // Domain of your site. No trailing slash!
 	siteLanguage: 'bg', // Language Tag on <html> element
-	siteLogo: '/logos/logo.png', // Used for SEO and manifest
+	siteLogo: '/logos/myfairytalebook.png', // Used for SEO and manifest
 	siteDescription: 'Image-heavy photography portfolio with colorful accents & great typography',
 	author: 'tstoev', // Author for schema.org JSONLD
 
