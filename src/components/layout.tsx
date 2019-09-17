@@ -254,13 +254,9 @@ const Layout = ({ children, color }: LayoutProps) => {
           <Main>{children}</Main>
           <Footer color={color}>
             <Box p={[6, 6, 8]} fontSize={0}>
-            <Link to="https://www.facebook.com/myfairytalebookss/" aria-label="Facebook">
-              Facebook
-                </Link>
-                <br/>
-                <Link to="https://www.facebook.com/myfairytalebookss/" aria-label="Facebook">
-              Instagram
-                </Link>
+            <a href={`https://www.facebook.com/myfairytalebookss/`}>Facebook</a>
+            <br/>
+            <a href={`https://www.instagram.com/myfairytaleboook/`}>Instagram</a>
             <br/>    
             <br/>  
             <a href={`tel:+359883449030`}>+359883449030</a>

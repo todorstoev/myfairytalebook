@@ -44,6 +44,7 @@ const SEO = ({ title, desc, banner, pathname, node, individual }: Props) => {
     url: `${siteUrl}${pathname || ''}`,
   }
 
+
   // schema.org in JSONLD format
   // https://developers.google.com/search/docs/guides/intro-structured-data
   // You can fill out the 'author', 'creator' with more data or another type (e.g. 'Organization')
