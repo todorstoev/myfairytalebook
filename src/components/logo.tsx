@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Logo = () => (
-	<svg viewBox="0 0 612 792" height="250">
+	<svg viewBox="0 0 600 600">
 		<title>MyFairytaleBook</title>
 		<defs id="defs88" />
 		<g id="g4">
