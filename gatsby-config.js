@@ -43,6 +43,12 @@ module.exports = {
 			}
 		},
 		{
+			resolve: "gatsby-plugin-google-tagmanager",
+			options: {
+			  id: config.googleTagID
+			},
+		  },
+		{
 			resolve: 'gatsby-source-filesystem',
 			options: {
 				name: '/books',

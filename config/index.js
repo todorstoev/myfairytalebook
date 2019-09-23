@@ -16,7 +16,7 @@ module.exports = {
 	ogSiteName: 'myfairytalebookss', // Facebook Site Name
 	ogLanguage: 'en_US', // og:language
 	googleAnalyticsID: 'UA-148150611-1',
-
+	googleTagID: 'GTM-T6M673P',
 	// Manifest and Progress color
 	themeColor: '#db7436',
 	backgroundColor: '#3b3c4f'
