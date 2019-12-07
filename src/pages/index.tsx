@@ -96,7 +96,7 @@ const Index: React.FunctionComponent<PageProps> = ({ data: { firstProject, three
 		from: { opacity: 0 },
 		to: { opacity: 1 }
 	});
-
+	debugger
 	return (
 		<Layout>
 			<SEO
@@ -157,7 +157,7 @@ export const query = graphql`
 				}
 			}
 		}
-		aboutUs: file(sourceInstanceName: { eq: "images" }, name: { eq: "about-index" }) {
+		aboutUs: file(sourceInstanceName: { eq: "images" }, name: { eq: "christmas" }) {
 			childImageSharp {
 				fluid(quality: 100, maxWidth: 1200) {
 					...GatsbyImageSharpFluid_withWebp
