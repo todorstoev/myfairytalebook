@@ -259,7 +259,7 @@ const Layout = ({ children, color }: LayoutProps) => {
             <a href={`https://www.instagram.com/myfairytaleboook/`}>Instagram</a>
             <br/>    
             <br/>  
-            <a href={`tel:+359883449030`}>+359883449030</a>
+            <a href={`tel:+359883449039`}>+359883449039</a>
             <br/>
             <a href={`mailto:hristy.keyt@gmail.com`}>hristy.keyt@gmail.com</a>        
            
